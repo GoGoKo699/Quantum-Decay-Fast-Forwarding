@@ -97,7 +97,7 @@ the target is a trace-preserving simulation $`\widetilde{\mathcal E}_\tau`$
 with
 
 ```math
-\left‖\widetilde{\mathcal E}_\tau-\mathcal E_\tau\right‖_\diamond
+‖\widetilde{\mathcal E}_\tau-\mathcal E_\tau‖_\diamond
 \le\varepsilon.
 ```
 

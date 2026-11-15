@@ -90,7 +90,7 @@ Use separate success work for the even filter and the following odd filter or ju
 If every primitive block has additive error at most $`\xi`$, the accepted block of a product of these two contractions differs by at most $`2\xi`$. The primitive blocks are contractions because they are projections of unitaries. The outer branch amplitudes have squared sum one, so retaining the branch labels introduces no additional factor proportional to the number of time points. Consequently, for any requested $`\zeta>0`$, the actual constructed unitary can have accepted block $`B_u`$ satisfying
 
 ```math
-\left‖B_u-\frac{M_\delta(u)}c\right‖\le\zeta
+‖B_u-\frac{M_\delta(u)}c‖\le\zeta
 ```
 
 uniformly in $`u`$, by choosing primitive errors and branch-preparation error $`O(\zeta)`$. Its query count is
