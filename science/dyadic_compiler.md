@@ -19,7 +19,7 @@ The first map preserves the input space; the second produces the event label and
 \|D_a\|\le\max_{0\le z\le1}\sqrt a\,z e^{-az^2/2}\le e^{-1/2}<1.
 ```
 
-This bound also covers $`a<1`$, when the unconstrained maximum lies outside the interval. Uniformly for a coherently encoded parameter $`0\le a\le T`$, a requested additive block error $`\xi`$ costs $`O((1+\sqrt T)\operatorname{polylog}((2+T)/\xi))`$ calls to the supplied jump block encoding and its inverse. The common coefficient register and time cutoff are fixed by $`T`$ and $`\xi`$; reversible arithmetic computes the dependence on $`a`$. The compiler does not require a different phase table for every possible event time.
+This bound also covers $`a<1`$, when the unconstrained maximum lies outside the interval. Uniformly for a coherently encoded parameter $`0\le a\le T`$, a requested additive block error $`\xi`$ costs $`O((1+\sqrt T)\mathrm{polylog}((2+T)/\xi))`$ calls to the supplied jump block encoding and its inverse. The common coefficient register and time cutoff are fixed by $`T`$ and $`\xi`$; reversible arithmetic computes the dependence on $`a`$. The compiler does not require a different phase table for every possible event time.
 
 One explicit realization uses the Hermitian dilation
 
@@ -97,7 +97,7 @@ uniformly in $`u`$, by choosing primitive errors and branch-preparation error $`
 
 ```math
 Q_B=O\!\left[(1+\sqrt T)
-\operatorname{polylog}\!\left(\frac{2T}{\delta\zeta}\right)\right].
+\mathrm{polylog}\!\left(\frac{2T}{\delta\zeta}\right)\right].
 ```
 
 The horizon register remains fixed during this whole construction. Hence the same statement holds for its controlled direct sum with operator error $`\zeta`$, even if the horizon is superposed and entangled with older records.
@@ -171,7 +171,7 @@ In these displays, the embeddings include the algorithm's failure space orthogon
 Q_{\mathrm{first}}
 =O\!\left[
 \big(1+\sqrt{1+\tau}\big)
-\operatorname{polylog}\!\left(\frac{2+\tau}{\delta\eta}\right)
+\mathrm{polylog}\!\left(\frac{2+\tau}{\delta\eta}\right)
 \right].
 ```
 

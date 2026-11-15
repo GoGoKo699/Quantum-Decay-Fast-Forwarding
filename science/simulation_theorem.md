@@ -27,7 +27,7 @@ in unhalved diamond norm, using
 
 ```math
 Q=O\!\left[(k+1)\sqrt{1+\tau}\,
-\operatorname{polylog}\!\left(
+\mathrm{polylog}\!\left(
 \frac{(2+\tau)(k+1)}{\varepsilon}\right)\right]
 ```
 
@@ -49,12 +49,12 @@ b=\left\lceil\log_2\!\left(
 a conservative implementation has total elementary gate count
 
 ```math
-O\!\left[Q\big(C_U+\operatorname{poly}(n_L+a_L+b)\big)
-+(k+1)\operatorname{poly}(b)\right]
+O\!\left[Q\big(C_U+\mathrm{poly}(n_L+a_L+b)\big)
++(k+1)\mathrm{poly}(b)\right]
 ```
 
 and live-qubit count
-$`O((k+1)(n_L+a_L+\operatorname{poly}(b)))`$. The latter is a simple
+$`O((k+1)(n_L+a_L+\mathrm{poly}(b)))`$. The latter is a simple
 workspace upper bound, not a memory optimum. The physical clock and event
 records themselves use $`O(k(b+\log(m+1)))`$ bits. Classical circuit
 compilation and finite-precision scalar preparation are charged in the
@@ -97,7 +97,7 @@ error is at most $`2\eta`$, and its query count is
 
 ```math
 O\!\left[\sqrt{1+\tau}\,
-\operatorname{polylog}\!\left(
+\mathrm{polylog}\!\left(
 \frac{(2+\tau)(k+1)}{\varepsilon}\right)\right].
 ```
 

@@ -34,7 +34,7 @@ Burdine et al. already analyze finite nilpotent jump structures. Their closed-fo
 
 ```math
 J=a|0\rangle\langle1|+b|1\rangle\langle2|,
-\qquad A=\operatorname{diag}(0,|a|^2,|b|^2),
+\qquad A=\mathrm{diag}(0,|a|^2,|b|^2),
 ```
 
 has homogeneous lowering, but a common scalar commutator requires $`|b|^2=2|a|^2`$ when $`a,b\ne0`$. The present compiler includes generic unequal rates and multiple noncommuting lowering maps. It does not assume a classically known diagonalizing basis or identify separately postselected Kraus experiments with a reusable deterministic channel.

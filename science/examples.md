@@ -92,7 +92,7 @@ Consider
 
 ```math
 J=\frac12\begin{pmatrix}0&1&1\\0&0&1\\0&0&0\end{pmatrix},
-\qquad G=\operatorname{diag}(0,1,2),
+\qquad G=\mathrm{diag}(0,1,2),
 \qquad
 A=\frac14\begin{pmatrix}0&0&0\\0&1&1\\0&1&2\end{pmatrix}.
 ```

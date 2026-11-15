@@ -22,6 +22,13 @@ Scientific routes:
 - verification/README.md: commands, actual polar-grid diagnostic, independent reconstruction and finite-check limits.
 - verification/verify.py and verification/expected_results.json: deterministic small-channel checks and saved reference values.
 
+Learning routes:
+- learning/README.md: the single Watrous2018 anchor and the connected learning route.
+- learning/watrous_bridge.md: verified source sections, notation and error-convention translation, an unequal-lifetime coherence example and the steps supplied by this project.
+- learning/milestones.md: exactly M01–M30, with 12 background and 18 narrative milestones; conceptual questions, understanding targets, dependencies, connections and source pointers.
+- For an introductory explanation, begin at the bridge's unequal-rate example, then connect its record to the scientific first-event proof and the common milestone map.
+- The selected textbook supplies channel/isometry/norm foundations. It does not supply the Lindblad compiler, Gaussian algorithm or oracle lower bound; those are developed and attributed in the scientific files.
+
 Essential distinctions:
 - H=0 is substantive. Arbitrary Hamiltonian evolution cannot be added for free.
 - Every jump lowers the grade AND the total rate A preserves it. Nilpotence alone does not cap actual trajectory length.
@@ -36,3 +43,4 @@ Essential distinctions:
 - A scalar rate supplied classically is different from an unknown coherent block-oracle parameter.
 - Finite numerical checks are not a compiled fault-tolerant implementation, independent expert certification, or a hardware/classical advantage demonstration.
 - First-event unravelling, Gaussian identities, block encodings, Hamiltonian simulation and oblivious amplification are inherited; the global waiting-time compiler and bounded-event continuation are the contribution.
+- The learning map is reader-independent; it contains no personal assessment history or teaching-session instructions and does not claim complete coverage of every specialist lemma.

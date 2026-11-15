@@ -4,7 +4,7 @@ The square-root dependence on the requested time is necessary in the supplied co
 
 ## One-event channels with identical classical metadata
 
-Let the known grading be $`G=\operatorname{diag}(0,1)`$, with zero internal Hamiltonian and one jump
+Let the known grading be $`G=\mathrm{diag}(0,1)`$, with zero internal Hamiltonian and one jump
 
 ```math
 J_\sigma=\sigma|0\rangle\langle1|,
@@ -70,7 +70,7 @@ Inverse and controlled calls do not evade this proximity:
 ```math
 \|U_\sigma^\dagger-U_0^\dagger\|=d_\sigma,
 \qquad
-\|\operatorname{ctrl}(U_\sigma)-\operatorname{ctrl}(U_0)\|=d_\sigma.
+\|\mathrm{ctrl}(U_\sigma)-\mathrm{ctrl}(U_0)\|=d_\sigma.
 ```
 
 The same holds for controlled inverses and direct-sum selection of these query types. Each use is one charged oracle call. No arbitrary-time power of the unknown oracle is supplied for unit cost.

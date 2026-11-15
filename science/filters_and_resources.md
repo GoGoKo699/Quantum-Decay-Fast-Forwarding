@@ -205,7 +205,7 @@ block-encoded Hamiltonian simulation gives, conservatively,
 $$
 Q_{\rm filt}
 =O\!\left[(\sqrt{a_{\max}}+1)
-     \operatorname{polylog}\frac{a_{\max}+1}{\eta}\right]
+     \mathrm{polylog}\frac{a_{\max}+1}{\eta}\right]
 $$
 
 queries to controlled $U_L,U_L^\dagger$ [LC19; GSLW19]. Arithmetic rounding
@@ -233,7 +233,7 @@ This normalization is a fixed known constant, so phase-matched
 constant-round amplification suffices; its finitely many constant angles
 are computed and synthesized to the required precision. Their degree is
 $d=O(|s|+\log(1/\zeta))$ for target error $\zeta$. Chebyshev interpolation
-can compute their coefficient lists using $O(d\operatorname{polylog}(d/\zeta))$
+can compute their coefficient lists using $O(d\mathrm{polylog}(d/\zeta))$
 bit operations. The fixed scaling gives a constant margin from the unit
 circle. The complementary polynomial is also constructed and charged: map a
 real parity polynomial $p$ to the Laurent polynomial
@@ -259,23 +259,23 @@ Use this canonical completion in the numerically stable inverse nonlinear
 FFT of [NSYL25, Algorithm1, Theorem5.6]; its phase synthesis
 uses $O(d\log^2d)$ arithmetic operations with
 $O(\log^2d+\log(1/\zeta))$ bits. This bounds the classical compilation by
-$d\operatorname{polylog}(d/\zeta)$ bit operations. The fixed normalization
+$d\mathrm{polylog}(d/\zeta)$ bit operations. The fixed normalization
 is paid only inside each Hamiltonian-simulation primitive, where robust
 amplification restores the simulated unitary; it is not multiplied across
 the residual Gaussian filters.
 
 Summing the compiled binary time powers retains
-$Q_{\rm filt}\operatorname{polylog}((a_{\max}+1)/\eta)$ classical bit
+$Q_{\rm filt}\mathrm{polylog}((a_{\max}+1)/\eta)$ classical bit
 operations and circuit-description size. This setup depends on the requested
 time and accuracy and the supplied oracle interface, not on a list of matrix
 entries. An oracle gate cost $g_L$ yields total gate cost
 
 $$
-Q_{\rm filt}\,[g_L+\operatorname{poly}(n_L+a_L+B)]
-+\operatorname{poly}(B),
+Q_{\rm filt}\,[g_L+\mathrm{poly}(n_L+a_L+B)]
++\mathrm{poly}(B),
 $$
 
-with $O(n_L+a_L+\operatorname{poly}(B))$ live qubits for one filter call,
+with $O(n_L+a_L+\mathrm{poly}(B))$ live qubits for one filter call,
 including its data, success and arithmetic registers. Standard finite-gate
 rotation synthesis contributes polylogarithmic factors in the accuracy.
 Physical implementation costs inside $g_L$ are not removed by this theorem.
