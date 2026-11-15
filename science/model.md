@@ -33,7 +33,7 @@ The generator has **no Hamiltonian term**:
 We impose two structural promises:
 
 1. Every jump strictly lowers the grading:
-   $`P_gJ_aP_h=0`$ unless $`g<h`$.
+   $`P_gJ_aP_h=0`$ unless $`g\lt h`$.
 2. The total loss operator preserves it: $`[A,G]=0`$.
 
 The second promise keeps the no-jump propagator

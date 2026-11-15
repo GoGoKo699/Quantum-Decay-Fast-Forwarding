@@ -56,6 +56,18 @@
         "a",
         "b"
       ]
+    },
+    {
+      "path": "science/model.md",
+      "index": 6,
+      "source_sha256": "4bca1fdc4b0bb9925071e5d4e7e8edc339d2cea78b8a9eab1fccc9d6c86cc5d5",
+      "expected_text": "g<h"
+    },
+    {
+      "path": "science/dyadic_compiler.md",
+      "index": 59,
+      "source_sha256": "c2deef55ec1796e01bc47ef4b44d9557a79ade7442b702888f8031b52bf374ba",
+      "expected_text": "0<a≤1"
     }
   ]
 }
