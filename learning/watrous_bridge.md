@@ -93,16 +93,16 @@ The [full example](../science/examples.md#two-excited-levels-with-unequal-lifeti
 The caller may supply a system entangled with another register. The simulator must act correctly on its part without knowing or modifying that reference. For a difference of channels $`\Delta=\widetilde\Phi-\Phi`$, the relevant norm can be written as
 
 ```math
-\|\Delta\|_\diamond
+‖\Delta‖_\diamond
 =\sup_{\rho_{SR}}
-\| (\Delta\otimes\mathrm{id}_R)(\rho_{SR})\|_1,
+‖ (\Delta\otimes\mathrm{id}_R)(\rho_{SR})‖_1,
 ```
 
-with a reference of input dimension sufficient. This is the book's completely bounded trace norm, written here with the usual diamond symbol. **No factor of one half is included.** For equal-prior channel discrimination, success probability is $`1/2+\|\Phi-\Psi\|_\diamond/4`$; a norm of two corresponds to perfect distinction.
+with a reference of input dimension sufficient. This is the book's completely bounded trace norm, written here with the usual diamond symbol. **No factor of one half is included.** For equal-prior channel discrimination, success probability is $`1/2+‖\Phi-\Psi‖_\diamond/4`$; a norm of two corresponds to perfect distinction.
 
 Sections 3.3.2–3.3.3 supply the operational norm framework. The project repeatedly uses its stability under adding an untouched reference and composing channels. For example, replacing one component of a channel circuit changes the complete channel by no more than that component's diamond error; successive replacements add their errors. Proposition 3.48 gives this composition rule in the author-hosted manuscript.
 
-The compiler proves a stronger intermediate statement: its initialized-workspace isometry is close in operator norm to the intended isometry. If $`\|V-W\|\le r`$, tracing their records gives channels at unhalved diamond distance at most $`2r`$. Tensoring with an untouched reference does not alter this bound. Thus the proof controls coherence and reference correlations, not just populations in selected tests.
+The compiler proves a stronger intermediate statement: its initialized-workspace isometry is close in operator norm to the intended isometry. If $`‖V-W‖\le r`$, tracing their records gives channels at unhalved diamond distance at most $`2r`$. Tensoring with an untouched reference does not alter this bound. Thus the proof controls coherence and reference correlations, not just populations in selected tests.
 
 ## From a first-event isometry to a finite clock
 
@@ -124,7 +124,7 @@ The continuous record is an analytical device. The actual circuit uses a finite 
 ```math
 I\le M_\delta(u)^\dagger M_\delta(u)\le(1+\delta)I,
 \qquad
-\|E_\delta M_\delta(u)-V_u\|\le\delta/2.
+‖E_\delta M_\delta(u)-V_u‖\le\delta/2.
 ```
 
 Here $`E_\delta`$ is the comparison embedding of a finite clock label into its time interval. The bound is uniform in $`u`$: a long horizon does not multiply this mesh error. The derivative identity behind it is
@@ -143,7 +143,7 @@ Polar normalization turns the finite stack into an exact ideal grid isometry. Th
 A large clock contains many time bins. Giving every time bin the same preparation weight would introduce a costly normalization. The useful observation is that on a band $`[a,2a)`$,
 
 ```math
-\|\sqrt a\,L e^{-sA/2}\|\le e^{-1/2}
+‖\sqrt a\,L e^{-sA/2}‖\le e^{-1/2}
 \quad(s\ge a).
 ```
 

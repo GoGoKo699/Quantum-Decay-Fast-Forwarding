@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 4,
+      "source_sha256": "68787cd0bffd34844354bf57e73f0303cd43e38409f2cc375efd7130bc00f28c",
+      "required_text": [
+        "Q=O",
+        "k+1",
+        "1+τ",
+        "2+τ",
+        "ε"
+      ]
+    },
+    {
+      "path": "science/simulation_theorem.md",
+      "index": 6,
+      "source_sha256": "8b7d2dfed9ca90ac2b5e6e99cb2cd9ff4f1453bcb55ca1d03fb835c89267d0fa",
+      "required_text": [
+        "‖",
+        "τ",
+        "≤ε"
+      ]
+    },
+    {
+      "path": "science/simulation_theorem.md",
+      "index": 7,
+      "source_sha256": "68787cd0bffd34844354bf57e73f0303cd43e38409f2cc375efd7130bc00f28c",
+      "required_text": [
+        "Q=O",
+        "k+1",
+        "1+τ",
+        "2+τ",
+        "ε"
+      ]
+    },
+    {
+      "path": "references/related_work.md",
+      "index": 8,
+      "source_sha256": "6bbdcb042b5c9eae2c6c8ff11e028fe4b4ec323cc88e9c4c45c4030021ab7578",
+      "required_text": [
+        "‖γψ‖2",
+        "δ",
+        "R",
+        "B"
+      ]
+    },
+    {
+      "path": "references/related_work.md",
+      "index": 15,
+      "source_sha256": "d6a2c5061d38bd167f1ac65d1cd6483d19e291154660def8f25859b473756c6e",
+      "required_text": [
+        "J=",
+        "A=diag",
+        "a",
+        "b"
+      ]
+    }
+  ]
+}

@@ -33,3 +33,7 @@ navigation. Workflow artifacts expire; they are reproducible diagnostic
 outputs rather than permanent scientific sources. The analytical proof and
 finite scientific checks remain separately documented in the parent
 [verification guide](../README.md).
+
+The explicit text contract checks the headline query bound, diamond-error norm,
+and the catalyst and diagonal-rate expressions that were reviewed during hosted
+rendering. Structural comparison still applies to every expression.

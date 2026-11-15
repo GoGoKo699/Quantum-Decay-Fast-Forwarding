@@ -16,7 +16,7 @@ The map records understanding targets and their dependencies. It does not claim 
 | W2.2.1 | Definitions and basic notions concerning channels: the physical output map |
 | W2.2.2 | Representations and characterizations of channels: Kraus and isometric representations |
 | W2.3.1 | Two equivalent definitions of measurements: outcome records and probabilities |
-| W2.3.2 | Nondestructive measurements and completely positive instruments: retained outcome branches |
+| W2.3.2 | Basic notions concerning measurements: nondestructive measurements and instruments |
 | W3.1.1 | Discriminating between pairs of quantum states: operational state distinguishability |
 | W3.3.1 | Channel discrimination: reference-assisted tests of a channel |
 | W3.3.2 | The completely bounded trace norm: the norm called the diamond norm here |
@@ -77,7 +77,7 @@ These sections supply channel foundations. Lindblad semigroups, projected unitar
 ### M07. A continuous family of physical channels
 
 - **Central question:** How do jump operators and the no-event term combine into continuous-time evolution?
-- **Understanding target:** Read the purely dissipative Lindblad generator and its semigroup; interpret the anticommutator's role in preserving trace and explain the channel continuity bound from $`\|\mathcal L\|_\diamond\le2`$.
+- **Understanding target:** Read the purely dissipative Lindblad generator and its semigroup; interpret the anticommutator's role in preserving trace and explain the channel continuity bound from $`‖\mathcal L‖_\diamond\le2`$.
 - **Dependencies and story role:** Uses M02, M04 and M06. Joins local event rules into a complete evolution over time.
 - **Conceptual connection:** Rounding a continuation horizon becomes a controlled channel error instead of an unspecified time approximation.
 - **Source pointers:** W2.2.1 and W3.3.2–W3.3.3 for channel foundations; [generator and norm](../science/first_event.md#the-supplied-jump-map); [future-time continuity](../science/time_discretization.md#future-time-and-the-full-channel-recurrence).

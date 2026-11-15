@@ -33,7 +33,7 @@ encoding of
 
 $$
 H_L=\begin{pmatrix}0&L^\dagger\\L&0\end{pmatrix},\qquad
-\|H_L\|\le1.
+‖H_L‖\le1.
 $$
 
 Implementing $U_H$ uses a constant number of controlled $U_L,U_L^\dagger$
@@ -141,7 +141,7 @@ For $M\ge8$, $R_M\le\sqrt M$. Our choice of $M$ makes both errors at most
 $\eta/8$. The elementary inequality
 
 $$
-\|e^{-isH}-e^{-itH}\|\le|s-t|\quad(\|H\|\le1)
+‖e^{-isH}-e^{-itH}‖\le|s-t|\quad(‖H‖\le1)
 $$
 
 turns these coupling bounds into operator-norm bounds on both finite LCUs.

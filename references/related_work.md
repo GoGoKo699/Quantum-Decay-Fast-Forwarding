@@ -20,9 +20,9 @@ The advance is the global waiting-time compiler and its bounded-event continuati
 For the normalization $`\alpha_B=1`$ and zero Hamiltonian, the local catalyst in Chen et al., Eq. (44), satisfies
 
 ```math
-\|\gamma\psi\|^2
-=\frac\delta2\left(\|R_\delta\psi\|^2+
-\|B R_\delta\psi\|^2\right),
+‖\gamma\psi‖^2
+=\frac\delta2\left(‖R_\delta\psi‖^2+
+‖B R_\delta\psi‖^2\right),
 \qquad R_\delta=(I+\delta B^\dagger B/4)^{-1}.
 ```
 

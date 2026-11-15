@@ -19,7 +19,7 @@ $`0<\varepsilon<1/4`$, a finite trace-preserving quantum circuit implements
 a system channel satisfying
 
 ```math
-\|\widetilde{\mathcal E}_\tau-e^{\tau\mathcal L}\|_\diamond
+‖\widetilde{\mathcal E}_\tau-e^{\tau\mathcal L}‖_\diamond
 \le\varepsilon
 ```
 
@@ -113,7 +113,7 @@ coherences between their initial grades.
 The [channel-level discretization proof](time_discretization.md) gives
 
 ```math
-\|\mathcal S_{k,u}-\mathcal E_\tau\|_\diamond
+‖\mathcal S_{k,u}-\mathcal E_\tau‖_\diamond
 \le(4k+2)\delta.
 ```
 
@@ -131,7 +131,7 @@ the grade exactly. The uniform isometry error already bounds that deviation.
 Consequently,
 
 ```math
-\|\widetilde{\mathcal E}_\tau-\mathcal E_\tau\|_\diamond
+‖\widetilde{\mathcal E}_\tau-\mathcal E_\tau‖_\diamond
 \le(4k+2)\delta+2k\eta
 \le\frac{(4k+2)\varepsilon}{12(k+1)}
 +\frac{k\varepsilon}{3(k+1)}<\varepsilon.

@@ -89,7 +89,7 @@ $$
 Then $P_\delta(u)$ is an isometry and
 
 $$
-\|P_\delta(u)-M_\delta(u)\|
+‖P_\delta(u)-M_\delta(u)‖
 \le\sqrt{1+\delta}-1\le\delta/2.
 $$
 
@@ -117,17 +117,17 @@ On one bin, Cauchy--Schwarz gives
 
 $$
 \int_{r\delta}^{(r+1)\delta}
-\|(F_s-F_{r\delta})\psi\|^2\,ds
+‖(F_s-F_{r\delta})\psi‖^2\,ds
 \le\delta^2\int_{r\delta}^{(r+1)\delta}
-\|F_v'\psi\|^2\,dv.
+‖F_v'\psi‖^2\,dv.
 $$
 
 Summing bins therefore yields
 
 $$
-\|WM_\delta(u)-V_u\|\le\delta/2,
+‖WM_\delta(u)-V_u‖\le\delta/2,
 \qquad
-\|WP_\delta(u)-V_u\|\le\delta.
+‖WP_\delta(u)-V_u‖\le\delta.
 $$
 
 The same operator bounds hold with any untouched reference tensor factor.
@@ -141,15 +141,15 @@ future time is rounded. The bound is independent of the horizon $u$.
 The channel norm of the generator satisfies
 
 $$
-\|\mathcal L\|_\diamond\le2\|A\|\le2.
+‖\mathcal L‖_\diamond\le2‖A‖\le2.
 $$
 
-Indeed the completely positive jump map has diamond norm $\|A\|$ and the
-two left/right multiplication terms together have norm at most $\|A\|$.
+Indeed the completely positive jump map has diamond norm $‖A‖$ and the
+two left/right multiplication terms together have norm at most $‖A‖$.
 Contractivity of channels consequently gives
 
 $$
-\|\mathcal E_v-\mathcal E_w\|_\diamond\le2|v-w|.
+‖\mathcal E_v-\mathcal E_w‖_\diamond\le2|v-w|.
 $$
 
 All complete prior records are retained until final trace. Subsequent maps
@@ -194,7 +194,7 @@ It is valid even for the $r=0$ bin: the remaining time need not decrease at
 that discrete branch, because the grade decreases. Therefore
 
 $$
-\|\mathcal S_{k,u}-\mathcal E_u\|_\diamond\le4k\delta.
+‖\mathcal S_{k,u}-\mathcal E_u‖_\diamond\le4k\delta.
 $$
 
 This proof compares complete unconditional channels. It does not compare a
@@ -208,7 +208,7 @@ For a requested real $t\ge0$, choose the dyadic step and round upward to
 $u=\delta\lceil t/\delta\rceil$. Then $0\le u-t<\delta$, and
 
 $$
-\|\mathcal S_{k,u}-\mathcal E_t\|_\diamond
+‖\mathcal S_{k,u}-\mathcal E_t‖_\diamond
 \le(4k+2)\delta.
 $$
 
@@ -218,7 +218,7 @@ coherently in the remaining-time register. A hybrid argument adds at most
 $k\zeta$ to the complete-channel error:
 
 $$
-\|\widetilde{\mathcal S}_{k,u}-\mathcal E_t\|_\diamond
+‖\widetilde{\mathcal S}_{k,u}-\mathcal E_t‖_\diamond
 \le(4k+2)\delta+k\zeta.
 $$
 

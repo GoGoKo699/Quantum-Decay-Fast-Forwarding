@@ -16,7 +16,7 @@ D_a=\sqrt a\,L e^{-aA/2}
 The first map preserves the input space; the second produces the event label and system in the output space of $`L`$. Both are contractions. For the second,
 
 ```math
-\|D_a\|\le\max_{0\le z\le1}\sqrt a\,z e^{-az^2/2}\le e^{-1/2}<1.
+‖D_a‖\le\max_{0\le z\le1}\sqrt a\,z e^{-az^2/2}\le e^{-1/2}<1.
 ```
 
 This bound also covers $`a<1`$, when the unconstrained maximum lies outside the interval. Uniformly for a coherently encoded parameter $`0\le a\le T`$, a requested additive block error $`\xi`$ costs $`O((1+\sqrt T)\mathrm{polylog}((2+T)/\xi))`$ calls to the supplied jump block encoding and its inverse. The common coefficient register and time cutoff are fixed by $`T`$ and $`\xi`$; reversible arithmetic computes the dependence on $`a`$. The compiler does not require a different phase table for every possible event time.
@@ -90,7 +90,7 @@ Use separate success work for the even filter and the following odd filter or ju
 If every primitive block has additive error at most $`\xi`$, the accepted block of a product of these two contractions differs by at most $`2\xi`$. The primitive blocks are contractions because they are projections of unitaries. The outer branch amplitudes have squared sum one, so retaining the branch labels introduces no additional factor proportional to the number of time points. Consequently, for any requested $`\zeta>0`$, the actual constructed unitary can have accepted block $`B_u`$ satisfying
 
 ```math
-\left\|B_u-\frac{M_\delta(u)}c\right\|\le\zeta
+\left‖B_u-\frac{M_\delta(u)}c\right‖\le\zeta
 ```
 
 uniformly in $`u`$, by choosing primitive errors and branch-preparation error $`O(\zeta)`$. Its query count is
@@ -117,7 +117,7 @@ Here the threshold is $`a=1/(2c)`$. To see that this is sufficient for the actua
 Thus $`B_u`$ has no singular value below $`1/(2c)`$. Let $`P(B_u)`$ denote its polar isometry. Singular-value calculus and a triangle inequality first give the useful direct bound
 
 ```math
-\|P(B_u)-M_\delta(u)\|
+‖P(B_u)-M_\delta(u)‖
 \le\frac\delta2+2c\zeta.
 ```
 
@@ -126,16 +126,16 @@ Indeed, $`cB_u`$ is within $`c\zeta`$ of $`M_\delta(u)`$, and changing its singu
 We also need closeness to the exact polar grid map without charging the mesh error a second time. The following elementary stability estimate suffices:
 
 ```math
-\|P(B_u)-P_\delta(u)\|\le10c\zeta.
+‖P(B_u)-P_\delta(u)‖\le10c\zeta.
 ```
 
-To verify it, set $`X=cB_u`$, $`Y=M_\delta(u)`$, $`S=X^\dagger X`$ and $`R=Y^\dagger Y`$. Their smallest eigenvalues are at least $`1/2`$, $`\|S-R\|\le4z`$, $`\|Y\|\le\sqrt2`$, and $`\|S^{-1/2}\|\le4/3`$. The resolvent integral for the inverse square root gives
+To verify it, set $`X=cB_u`$, $`Y=M_\delta(u)`$, $`S=X^\dagger X`$ and $`R=Y^\dagger Y`$. Their smallest eigenvalues are at least $`1/2`$, $`‖S-R‖\le4z`$, $`‖Y‖\le\sqrt2`$, and $`‖S^{-1/2}‖\le4/3`$. The resolvent integral for the inverse square root gives
 
 ```math
-\|S^{-1/2}-R^{-1/2}\|
-\le\frac{\|S-R\|}{\pi}
+‖S^{-1/2}-R^{-1/2}‖
+\le\frac{‖S-R‖}{\pi}
 \int_0^\infty\frac{r^{-1/2}}{(r+1/2)^2}\,dr
-=\sqrt2\,\|S-R\|.
+=\sqrt2\,‖S-R‖.
 ```
 
 Expanding $`XS^{-1/2}-YR^{-1/2}`$ then gives a bound $`(4/3+8)z<10z`$. This proves the displayed polar estimate, uniformly over the horizon register.
@@ -143,7 +143,7 @@ Expanding $`XS^{-1/2}-YR^{-1/2}`$ then gives a bound $`(4/3+8)z<10z`$. This prov
 Let $`W_u`$ be the entire singular-value-transformation unitary on fresh input work. Its accepted block is within $`\nu`$ of $`P(B_u)`$. Its rejected amplitude is at most $`\sqrt{2\nu}`$, because every transformed singular value has squared modulus at least $`(1-\nu)^2`$. Therefore, after embedding its successful output in the finite-clock space,
 
 ```math
-\|W_u|\mathrm{fresh}\rangle-P(B_u)\|
+‖W_u|\mathrm{fresh}\rangle-P(B_u)‖
 \le\nu+\sqrt{2\nu}\le3\sqrt\nu.
 ```
 
@@ -152,12 +152,12 @@ This is an estimate for the complete isometry, not a conditional successful outp
 Combining the bounds gives both the grid-map implementation error and its comparison with exact waiting:
 
 ```math
-\|W_u|\mathrm{fresh}\rangle-P_\delta(u)\|
+‖W_u|\mathrm{fresh}\rangle-P_\delta(u)‖
 \le10c\zeta+3\sqrt\nu,
 ```
 
 ```math
-\|E_\delta W_u|\mathrm{fresh}\rangle-V_u\|
+‖E_\delta W_u|\mathrm{fresh}\rangle-V_u‖
 \le\delta+10c\zeta+3\sqrt\nu.
 ```
 
