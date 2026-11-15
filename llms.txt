@@ -1,0 +1,38 @@
+# Quantum Decay Fast Forwarding
+
+This project simulates full purely dissipative system channels with bounded
+decay depth. A global dyadic first-event clock and normalized Gaussian filters
+give square-root horizon query dependence. The proof retains emission-time
+information, rather than combining all possible jumps into one Kraus operator.
+
+Scientific routes:
+- README.md: scientific question, principal bound, result table, scope and reproduction.
+- science/README.md: connected topic-based reading route.
+- science/model.md: grading, zero Hamiltonian, normalized controlled/inverse stacked-jump encoding and unhalved diamond convention.
+- science/simulation_theorem.md: complete theorem, accuracy allocation, proof assembly, gate/workspace charges and limits.
+- science/first_event.md: exact first-event isometry, finite left-grid stack, horizon-independent wavepacket error and polar normalization.
+- science/dyadic_compiler.md: dyadic outer preparation, coherent-parameter filters, common logarithmic normalization and unconditional amplification.
+- science/filters_and_resources.md: Gaussian/Rayleigh Fourier LCUs, explicit midpoint sampling, reversible arithmetic, controlled Hamiltonian simulation and classical compilation.
+- science/time_discretization.md: physical future-time coarsening, retained history sectors, bounded-depth recurrence and complete-channel error.
+- science/lower_bound.md: close scalar block-oracle completions, controlled/inverse hybrid argument and matching fixed-depth horizon exponent.
+- science/examples.md: unequal-rate sink coherence, noncommuting grade-two fixture and strict-lowering counterexample.
+- science/interpretation.md: what waiting-time information means and why the restricted promise matters.
+- references/related_work.md: source-specific differences and attribution of inherited ingredients.
+- references/references.bib: primary bibliographic metadata.
+- verification/README.md: commands, actual polar-grid diagnostic, independent reconstruction and finite-check limits.
+- verification/verify.py and verification/expected_results.json: deterministic small-channel checks and saved reference values.
+
+Essential distinctions:
+- H=0 is substantive. Arbitrary Hamiltonian evolution cannot be added for free.
+- Every jump lowers the grade AND the total rate A preserves it. Nilpotence alone does not cap actual trajectory length.
+- Component jumps are J_a; their rectangular stack is L; A=L_dagger L is normalized at most I.
+- The oracle includes controlled and inverse access with a known bound, not the exact unknown norm or a free spectral basis.
+- Physical normalization beta makes tau=beta^2 T. Encoding construction and implementation remain charged.
+- Output error is unhalved diamond norm and includes arbitrary reference entanglement and numerical-failure branches.
+- The algorithm retains internal time/index records and eventually traces them out; it does not reproduce a physical field at arbitrary temporal resolution.
+- The actual ideal finite algorithm uses a polar-normalized LEFT-grid stack. A zero-wait grid event still lowers the grade.
+- The exact-TP right-cell microchannel in verification is a separate related discretization. Do not identify it with the polar-grid algorithm.
+- Square-root horizon optimality is for fixed positive decay depth and fixed accuracy, up to logs; no joint optimality in k, precision, gates or memory is proved.
+- A scalar rate supplied classically is different from an unknown coherent block-oracle parameter.
+- Finite numerical checks are not a compiled fault-tolerant implementation, independent expert certification, or a hardware/classical advantage demonstration.
+- First-event unravelling, Gaussian identities, block encodings, Hamiltonian simulation and oblivious amplification are inherited; the global waiting-time compiler and bounded-event continuation are the contribution.
