@@ -65,13 +65,13 @@ Both jumps lower the grade by one. Their total rate matrix is
 ```math
 A=0_2\oplus\frac1{36}\begin{pmatrix}21&5\\5&7\end{pmatrix}
 \oplus\frac1{36}\begin{pmatrix}7&0\\0&15\end{pmatrix},
-\qquad \|A\|\simeq0.627842369<1.
+\qquad ‖A‖\simeq0.627842369<1.
 ```
 
 Thus $`[A,G]=0`$, every trajectory has at most two events, and the normalization is already valid without an instance-dependent rescaling. However,
 
 ```math
-\|[J_1^\dagger J_1,J_2^\dagger J_2]\|=\frac1{162}>0.
+‖[J_1^\dagger J_1,J_2^\dagger J_2]‖=\frac1{162}>0.
 ```
 
 Consequently, the individual rate matrices cannot all be diagonalized in one basis. A common scalar relation $`[A,J_a]=\lambda J_a`$ also fails. The example lies within the grading promise while falling outside the special commuting-rate reductions discussed in [related work](../references/related_work.md).
@@ -92,7 +92,7 @@ Consider
 
 ```math
 J=\frac12\begin{pmatrix}0&1&1\\0&0&1\\0&0&0\end{pmatrix},
-\qquad G=\operatorname{diag}(0,1,2),
+\qquad G=\mathrm{diag}(0,1,2),
 \qquad
 A=\frac14\begin{pmatrix}0&0&0\\0&1&1\\0&1&2\end{pmatrix}.
 ```
@@ -109,9 +109,9 @@ K=\begin{pmatrix}0&a&b\\0&c&d\\0&0&0\end{pmatrix},
 For every positive integer $`m`$, the grade-one component of $`K^m|2\rangle`$ is $`c^{m-1}d\ne0`$. Thus the interleaved trajectory is not truncated by $`J^3=0`$. The diagnostics obtain
 
 ```math
-\|K^3|2\rangle\|^2\simeq6.53094\times10^{-5},
+‖K^3|2\rangle‖^2\simeq6.53094\times10^{-5},
 \qquad
-\|K^5|2\rangle\|^2\simeq4.76899\times10^{-10}.
+‖K^5|2\rangle‖^2\simeq4.76899\times10^{-10}.
 ```
 
 These are trajectory densities at specified waiting times, not probabilities of a single point in a continuous distribution. Continuity gives nonzero integrated probability on sufficiently small neighborhoods of those times. This example explains the separate assumption $`[A,G]=0`$ in the [model](model.md); homogeneous lowering of each jump is one sufficient way to obtain it.

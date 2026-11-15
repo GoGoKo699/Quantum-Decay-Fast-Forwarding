@@ -20,9 +20,9 @@ The advance is the global waiting-time compiler and its bounded-event continuati
 For the normalization $`\alpha_B=1`$ and zero Hamiltonian, the local catalyst in Chen et al., Eq. (44), satisfies
 
 ```math
-\|\gamma\psi\|^2
-=\frac\delta2\left(\|R_\delta\psi\|^2+
-\|B R_\delta\psi\|^2\right),
+‖\gamma\psi‖^2
+=\frac\delta2\left(‖R_\delta\psi‖^2+
+‖B R_\delta\psi‖^2\right),
 \qquad R_\delta=(I+\delta B^\dagger B/4)^{-1}.
 ```
 
@@ -34,7 +34,7 @@ Burdine et al. already analyze finite nilpotent jump structures. Their closed-fo
 
 ```math
 J=a|0\rangle\langle1|+b|1\rangle\langle2|,
-\qquad A=\operatorname{diag}(0,|a|^2,|b|^2),
+\qquad A=\mathrm{diag}(0,|a|^2,|b|^2),
 ```
 
 has homogeneous lowering, but a common scalar commutator requires $`|b|^2=2|a|^2`$ when $`a,b\ne0`$. The present compiler includes generic unequal rates and multiple noncommuting lowering maps. It does not assume a classically known diagonalizing basis or identify separately postselected Kraus experiments with a reusable deterministic channel.

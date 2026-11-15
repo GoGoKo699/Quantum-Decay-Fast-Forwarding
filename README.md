@@ -2,9 +2,8 @@
 
 Can a quantum simulator skip long waits between only a few irreversible
 decays? This project gives a full-channel simulation algorithm for purely
-dissipative processes with a bounded downward excitation grading. It preserves
-the coherence lost into the emission-time record, including unknown and
-arbitrarily slow decay rates.
+dissipative processes with a bounded downward excitation grading. It reproduces the coherence changes caused by unobserved emission times,
+including unknown and arbitrarily slow decay rates.
 
 With controlled and inverse access to a normalized encoding of the stacked
 jump operators, a process of normalized duration $`\tau`$ and decay depth
@@ -12,7 +11,7 @@ $`k`$ can be simulated to unhalved diamond error $`\varepsilon`$ using
 
 ```math
 Q=O\!\left[(k+1)\sqrt{1+\tau}\,
-\operatorname{polylog}\!\left(
+\mathrm{polylog}\!\left(
 \frac{(2+\tau)(k+1)}{\varepsilon}\right)\right]
 ```
 
@@ -36,6 +35,20 @@ Start with the [scientific guide](science/README.md),
 For attribution and the precise difference from previous simulation methods,
 read [related work](references/related_work.md) and the
 [bibliography](references/references.bib).
+
+## Learn the construction
+
+The single educational anchor is **John Watrous, The Theory of Quantum
+Information (2018)**. The [source-to-project bridge](learning/watrous_bridge.md)
+starts with two excited states of unequal lifetime: their final populations
+are unchanged by forgetting emission time, but their coherence is not. It
+connects this example to channel error, the finite clock and the compiler.
+
+The [30-milestone map](learning/milestones.md) has 12 background milestones
+and 18 narrative milestones. It builds the complete scientific story from
+local channel and access concepts to the simulation theorem, resource
+accounting and lower bound. The [learning guide](learning/README.md) connects
+the two routes without replacing the authoritative proofs.
 
 ## Reproduce the finite checks
 

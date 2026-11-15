@@ -4,7 +4,7 @@ The square-root dependence on the requested time is necessary in the supplied co
 
 ## One-event channels with identical classical metadata
 
-Let the known grading be $`G=\operatorname{diag}(0,1)`$, with zero internal Hamiltonian and one jump
+Let the known grading be $`G=\mathrm{diag}(0,1)`$, with zero internal Hamiltonian and one jump
 
 ```math
 J_\sigma=\sigma|0\rangle\langle1|,
@@ -12,7 +12,7 @@ J_\sigma=\sigma|0\rangle\langle1|,
 \qquad 0\le\sigma\le1.
 ```
 
-The classically supplied normalization is the common bound $`1`$. The exact norm $`\|J_\sigma\|=\sigma`$ is **not** supplied as classical input. The system dimension, grading, number of jump labels, normalization, requested horizon and allowed query types are the same for every member of the family. The unknown parameter occurs only in the oracle.
+The classically supplied normalization is the common bound $`1`$. The exact norm $`‖J_\sigma‖=\sigma`$ is **not** supplied as classical input. The system dimension, grading, number of jump labels, normalization, requested horizon and allowed query types are the same for every member of the family. The unknown parameter occurs only in the oracle.
 
 The generator and its action on the excited state are
 
@@ -59,7 +59,7 @@ The columns are orthonormal and
 Thus this is an exact block encoding with common normalization one. Its distance from $`U_0`$ is
 
 ```math
-d_\sigma:=\|U_\sigma-U_0\|
+d_\sigma:=‖U_\sigma-U_0‖
 =\sqrt{2-2\sqrt{1-\sigma^2}}
 =2\sin\left(\frac{\arcsin\sigma}{2}\right)
 \le\sqrt2\,\sigma.
@@ -68,9 +68,9 @@ d_\sigma:=\|U_\sigma-U_0\|
 Inverse and controlled calls do not evade this proximity:
 
 ```math
-\|U_\sigma^\dagger-U_0^\dagger\|=d_\sigma,
+‖U_\sigma^\dagger-U_0^\dagger‖=d_\sigma,
 \qquad
-\|\operatorname{ctrl}(U_\sigma)-\operatorname{ctrl}(U_0)\|=d_\sigma.
+‖\mathrm{ctrl}(U_\sigma)-\mathrm{ctrl}(U_0)‖=d_\sigma.
 ```
 
 The same holds for controlled inverses and direct-sum selection of these query types. Each use is one charged oracle call. No arbitrary-time power of the unknown oracle is supplied for unit cost.
@@ -80,7 +80,7 @@ The same holds for controlled inverses and direct-sum selection of these query t
 Suppose a simulator uses at most $`q`$ oracle calls and produces channels $`\widetilde\Phi_\sigma`$ with **unhalved** diamond error at most $`\epsilon`$:
 
 ```math
-\|\widetilde\Phi_\sigma-e^{t\mathcal L_\sigma}\|_\diamond\le\epsilon.
+‖\widetilde\Phi_\sigma-e^{t\mathcal L_\sigma}‖_\diamond\le\epsilon.
 ```
 
 All known gates, initial ancillas and control choices are independent of the unknown $`\sigma`$. Arbitrary input-independent computation, retained quantum memory, intermediate measurements and resets are allowed. Purifying the known operations, a query-by-query hybrid gives Euclidean distance at most $`q d_{\sigma_1}`$ between the two final pure states. Their reduced outputs consequently have half trace distance at most $`q d_{\sigma_1}`$.
