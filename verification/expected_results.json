@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "scalar_oracle": [
+    {
+      "time": 1.0,
+      "sigma": 1.0,
+      "oracle_operator_distance": 1.4142135623730951,
+      "ideal_output_half_trace_distance": 0.6321205588285577,
+      "hybrid_query_lower_at_unhalved_error_0_1": 0.3762660555564483
+    },
+    {
+      "time": 4.0,
+      "sigma": 0.5,
+      "oracle_operator_distance": 0.5176380902050415,
+      "ideal_output_half_trace_distance": 0.6321205588285577,
+      "hybrid_query_lower_at_unhalved_error_0_1": 1.0279779809437508
+    },
+    {
+      "time": 16.0,
+      "sigma": 0.25,
+      "oracle_operator_distance": 0.2520085849654562,
+      "ideal_output_half_trace_distance": 0.6321205588285577,
+      "hybrid_query_lower_at_unhalved_error_0_1": 2.1115175854088366
+    },
+    {
+      "time": 64.0,
+      "sigma": 0.125,
+      "oracle_operator_distance": 0.12524582508633594,
+      "ideal_output_half_trace_distance": 0.6321205588285577,
+      "hybrid_query_lower_at_unhalved_error_0_1": 4.248609152933841
+    },
+    {
+      "time": 256.0,
+      "sigma": 0.0625,
+      "oracle_operator_distance": 0.06253056985256092,
+      "ideal_output_half_trace_distance": 0.6321205588285577,
+      "hybrid_query_lower_at_unhalved_error_0_1": 8.509766664260855
+    }
+  ],
+  "unequal_rate_coherence": {
+    "rates": [
+      0.25,
+      1.0
+    ],
+    "records": [
+      {
+        "time": 1.0,
+        "exact_jump_coherence": 0.3717908571848078,
+        "generator_formula_residual": 0.0,
+        "collapsed_one_kraus_coherence": 0.37393124049394816,
+        "collapsed_coherence_excess": 0.002140383309140348
+      },
+      {
+        "time": 4.0,
+        "exact_jump_coherence": 0.7343320011008809,
+        "generator_formula_residual": 1.1102230246251565e-16,
+        "collapsed_one_kraus_coherence": 0.7877454328264359,
+        "collapsed_coherence_excess": 0.053413431725555016
+      },
+      {
+        "time": 16.0,
+        "exact_jump_coherence": 0.79996368005619,
+        "generator_formula_residual": 1.1102230246251565e-16,
+        "collapsed_one_kraus_coherence": 0.9907998035109034,
+        "collapsed_coherence_excess": 0.19083612345471335
+      },
+      {
+        "time": 64.0,
+        "exact_jump_coherence": 0.8,
+        "generator_formula_residual": 0.0,
+        "collapsed_one_kraus_coherence": 0.9999999437324111,
+        "collapsed_coherence_excess": 0.19999994373241103
+      }
+    ]
+  },
+  "noncommuting_graded_cascade": {
+    "dimension": 6,
+    "grades": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+    ],
+    "number_of_jumps": 2,
+    "rate_norm": 0.6278423685289618,
+    "rate_grade_commutator": 0.0,
+    "individual_rate_commutator": 0.006172839506172839,
+    "generator_on_identity_norm": 0.8471083712209392,
+    "records": [
+      {
+        "time": 1.0,
+        "grid_step": 0.125,
+        "step_kraus_tp_residual": 1.1122690736586931e-16,
+        "channel_tp_residual": 1.0061396160665481e-15,
+        "minimum_normalized_choi_eigenvalue": -1.5513898906029526e-16,
+        "normalized_choi_unhalved_distance": 0.004260943274528469,
+        "diamond_norm_upper_bound": 0.025565659647170814
+      },
+      {
+        "time": 1.0,
+        "grid_step": 0.0625,
+        "step_kraus_tp_residual": 2.2205222795984943e-16,
+        "channel_tp_residual": 2.375423688379472e-15,
+        "minimum_normalized_choi_eigenvalue": -1.2802035058152284e-16,
+        "normalized_choi_unhalved_distance": 0.002112737957401833,
+        "diamond_norm_upper_bound": 0.012676427744410999
+      },
+      {
+        "time": 1.0,
+        "grid_step": 0.03125,
+        "step_kraus_tp_residual": 2.220479930051231e-16,
+        "channel_tp_residual": 5.572260161250017e-15,
+        "minimum_normalized_choi_eigenvalue": -3.099575777670306e-16,
+        "normalized_choi_unhalved_distance": 0.0010520064707485429,
+        "diamond_norm_upper_bound": 0.006312038824491257
+      },
+      {
+        "time": 1.0,
+        "grid_step": 0.015625,
+        "step_kraus_tp_residual": 1.1102232893228894e-16,
+        "channel_tp_residual": 1.0782400353916801e-14,
+        "minimum_normalized_choi_eigenvalue": -7.281022976609025e-16,
+        "normalized_choi_unhalved_distance": 0.0005249243304122704,
+        "diamond_norm_upper_bound": 0.0031495459824736225
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.125,
+        "step_kraus_tp_residual": 1.1122690736586931e-16,
+        "channel_tp_residual": 3.239980517669368e-15,
+        "minimum_normalized_choi_eigenvalue": -1.739904602864989e-16,
+        "normalized_choi_unhalved_distance": 0.0058837072928952065,
+        "diamond_norm_upper_bound": 0.03530224375737124
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.0625,
+        "step_kraus_tp_residual": 2.2205222795984943e-16,
+        "channel_tp_residual": 6.326947233942627e-15,
+        "minimum_normalized_choi_eigenvalue": -1.4708910376844256e-16,
+        "normalized_choi_unhalved_distance": 0.002920244349031839,
+        "diamond_norm_upper_bound": 0.017521466094191033
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.03125,
+        "step_kraus_tp_residual": 2.220479930051231e-16,
+        "channel_tp_residual": 1.3512661670578064e-14,
+        "minimum_normalized_choi_eigenvalue": -6.436076617728229e-16,
+        "normalized_choi_unhalved_distance": 0.0014547774944818621,
+        "diamond_norm_upper_bound": 0.008728664966891172
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.015625,
+        "step_kraus_tp_residual": 1.1102232893228894e-16,
+        "channel_tp_residual": 2.697549600968877e-14,
+        "minimum_normalized_choi_eigenvalue": -1.6348985033222815e-15,
+        "normalized_choi_unhalved_distance": 0.0007260597174929381,
+        "diamond_norm_upper_bound": 0.004356358304957629
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.125,
+        "step_kraus_tp_residual": 1.1122690736586931e-16,
+        "channel_tp_residual": 6.630832029689286e-15,
+        "minimum_normalized_choi_eigenvalue": -8.039946174252153e-17,
+        "normalized_choi_unhalved_distance": 0.0012892296774073462,
+        "diamond_norm_upper_bound": 0.007735378064444077
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.0625,
+        "step_kraus_tp_residual": 2.2205222795984943e-16,
+        "channel_tp_residual": 9.684061759203096e-15,
+        "minimum_normalized_choi_eigenvalue": -5.25432701062657e-17,
+        "normalized_choi_unhalved_distance": 0.0006411044754735735,
+        "diamond_norm_upper_bound": 0.003846626852841441
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.03125,
+        "step_kraus_tp_residual": 2.220479930051231e-16,
+        "channel_tp_residual": 2.5072197187189252e-14,
+        "minimum_normalized_choi_eigenvalue": -2.8908588504057894e-16,
+        "normalized_choi_unhalved_distance": 0.00031968628337533537,
+        "diamond_norm_upper_bound": 0.0019181177002520122
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.015625,
+        "step_kraus_tp_residual": 1.1102232893228894e-16,
+        "channel_tp_residual": 4.243558757126725e-14,
+        "minimum_normalized_choi_eigenvalue": -9.395206011333346e-16,
+        "normalized_choi_unhalved_distance": 0.00015962813371714425,
+        "diamond_norm_upper_bound": 0.0009577688023028655
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.125,
+        "step_kraus_tp_residual": 1.1122690736586931e-16,
+        "channel_tp_residual": 7.283164584525346e-15,
+        "minimum_normalized_choi_eigenvalue": -4.55768391144391e-17,
+        "normalized_choi_unhalved_distance": 2.8202682297639288e-05,
+        "diamond_norm_upper_bound": 0.00016921609378583573
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.0625,
+        "step_kraus_tp_residual": 2.2205222795984943e-16,
+        "channel_tp_residual": 1.0195520920943948e-14,
+        "minimum_normalized_choi_eigenvalue": -5.670680437531787e-17,
+        "normalized_choi_unhalved_distance": 1.1381440160445115e-05,
+        "diamond_norm_upper_bound": 6.82886409626707e-05
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.03125,
+        "step_kraus_tp_residual": 2.220479930051231e-16,
+        "channel_tp_residual": 2.8004362386706287e-14,
+        "minimum_normalized_choi_eigenvalue": -5.904903821991961e-17,
+        "normalized_choi_unhalved_distance": 5.082713994076519e-06,
+        "diamond_norm_upper_bound": 3.0496283964459112e-05
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.015625,
+        "step_kraus_tp_residual": 1.1102232893228894e-16,
+        "channel_tp_residual": 4.3759468178392414e-14,
+        "minimum_normalized_choi_eigenvalue": -4.2210034552118686e-17,
+        "normalized_choi_unhalved_distance": 2.4125706995079005e-06,
+        "diamond_norm_upper_bound": 1.4475424197047403e-05
+      }
+    ]
+  },
+  "actual_polar_grid_cascade": {
+    "direct_enumeration_convolution_residual": 2.6993836765324713e-16,
+    "records": [
+      {
+        "time": 1.0,
+        "grid_step": 0.25,
+        "event_depth": 2,
+        "channel_tp_residual": 4.730677113667733e-16,
+        "minimum_normalized_choi_eigenvalue": -1.5903184095091843e-16,
+        "normalized_choi_unhalved_distance": 0.022470289876673794,
+        "diamond_norm_upper_bound": 0.13482173926004276
+      },
+      {
+        "time": 1.0,
+        "grid_step": 0.125,
+        "event_depth": 2,
+        "channel_tp_residual": 4.739828351457161e-16,
+        "minimum_normalized_choi_eigenvalue": -1.1462008221383123e-16,
+        "normalized_choi_unhalved_distance": 0.011199334547164552,
+        "diamond_norm_upper_bound": 0.0671960072829873
+      },
+      {
+        "time": 1.0,
+        "grid_step": 0.0625,
+        "event_depth": 2,
+        "channel_tp_residual": 6.114106657603893e-16,
+        "minimum_normalized_choi_eigenvalue": -1.4651409226240588e-16,
+        "normalized_choi_unhalved_distance": 0.005589448916059077,
+        "diamond_norm_upper_bound": 0.033536693496354464
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.25,
+        "event_depth": 2,
+        "channel_tp_residual": 1.5524524895809813e-15,
+        "minimum_normalized_choi_eigenvalue": -8.297779188102831e-17,
+        "normalized_choi_unhalved_distance": 0.025677938612812822,
+        "diamond_norm_upper_bound": 0.15406763167687693
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.125,
+        "event_depth": 2,
+        "channel_tp_residual": 1.639283395695665e-15,
+        "minimum_normalized_choi_eigenvalue": -5.2332395210500604e-17,
+        "normalized_choi_unhalved_distance": 0.012955715404732495,
+        "diamond_norm_upper_bound": 0.07773429242839497
+      },
+      {
+        "time": 4.0,
+        "grid_step": 0.0625,
+        "event_depth": 2,
+        "channel_tp_residual": 1.9915471692809773e-15,
+        "minimum_normalized_choi_eigenvalue": -1.704739210688317e-16,
+        "normalized_choi_unhalved_distance": 0.006506756043643588,
+        "diamond_norm_upper_bound": 0.039040536261861526
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.25,
+        "event_depth": 2,
+        "channel_tp_residual": 4.571633257887788e-15,
+        "minimum_normalized_choi_eigenvalue": -4.710921340482969e-17,
+        "normalized_choi_unhalved_distance": 0.006362241202971753,
+        "diamond_norm_upper_bound": 0.03817344721783052
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.125,
+        "event_depth": 2,
+        "channel_tp_residual": 1.8870985039656035e-15,
+        "minimum_normalized_choi_eigenvalue": -6.148220866215209e-17,
+        "normalized_choi_unhalved_distance": 0.0032098700172947287,
+        "diamond_norm_upper_bound": 0.019259220103768373
+      },
+      {
+        "time": 16.0,
+        "grid_step": 0.0625,
+        "event_depth": 2,
+        "channel_tp_residual": 1.1121851062404886e-14,
+        "minimum_normalized_choi_eigenvalue": -4.00452453453254e-17,
+        "normalized_choi_unhalved_distance": 0.0016122345259399738,
+        "diamond_norm_upper_bound": 0.009673407155639843
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.25,
+        "event_depth": 2,
+        "channel_tp_residual": 4.872932359433831e-15,
+        "minimum_normalized_choi_eigenvalue": -3.051344178526635e-17,
+        "normalized_choi_unhalved_distance": 0.00014901213185572237,
+        "diamond_norm_upper_bound": 0.0008940727911343342
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.125,
+        "event_depth": 2,
+        "channel_tp_residual": 2.074776707079857e-15,
+        "minimum_normalized_choi_eigenvalue": -8.039907050871031e-17,
+        "normalized_choi_unhalved_distance": 6.411721235725873e-05,
+        "diamond_norm_upper_bound": 0.0003847032741435524
+      },
+      {
+        "time": 64.0,
+        "grid_step": 0.0625,
+        "event_depth": 2,
+        "channel_tp_residual": 1.8785650198856046e-14,
+        "minimum_normalized_choi_eigenvalue": -9.102043766991279e-17,
+        "normalized_choi_unhalved_distance": 2.975738520109506e-05,
+        "diamond_norm_upper_bound": 0.00017854431120657038
+      }
+    ]
+  },
+  "dyadic_first_event_stack": [
+    {
+      "time": 1.0,
+      "grid_step": 0.0625,
+      "number_of_time_bins": 1,
+      "stack_normalization_squared": 2,
+      "corrected_stack_gram_residual": 2.231981997251737e-16,
+      "uncorrected_riemann_gram_error": 0.009207839665052679,
+      "actual_left_grid_gram_eigenvalue_min": 1.0,
+      "actual_left_grid_gram_eigenvalue_max": 1.0092078396650526,
+      "actual_polar_stack_gram_residual": 4.569324459495885e-16,
+      "accepted_gram_target_residual": 1.1159909986258686e-16,
+      "dyadic_envelope_operator_norms": [
+        0.7923650475184792
+      ]
+    },
+    {
+      "time": 4.0,
+      "grid_step": 0.0625,
+      "number_of_time_bins": 3,
+      "stack_normalization_squared": 4,
+      "corrected_stack_gram_residual": 5.552037388779564e-16,
+      "uncorrected_riemann_gram_error": 0.01814566628121249,
+      "actual_left_grid_gram_eigenvalue_min": 1.0,
+      "actual_left_grid_gram_eigenvalue_max": 1.0181456662812123,
+      "actual_polar_stack_gram_residual": 5.575274499630596e-16,
+      "accepted_gram_target_residual": 1.388009347194891e-16,
+      "dyadic_envelope_operator_norms": [
+        0.7923650475184792,
+        0.5788833677811661,
+        0.6018016066411743
+      ]
+    },
+    {
+      "time": 16.0,
+      "grid_step": 0.0625,
+      "number_of_time_bins": 5,
+      "stack_normalization_squared": 6,
+      "corrected_stack_gram_residual": 1.5711369788861007e-15,
+      "uncorrected_riemann_gram_error": 0.019747529777533822,
+      "actual_left_grid_gram_eigenvalue_min": 1.0,
+      "actual_left_grid_gram_eigenvalue_max": 1.019747529777534,
+      "actual_polar_stack_gram_residual": 5.187246212302718e-16,
+      "accepted_gram_target_residual": 2.5275744034116504e-16,
+      "dyadic_envelope_operator_norms": [
+        0.7923650475184792,
+        0.5788833677811661,
+        0.6018016066411743,
+        0.5977718598866857,
+        0.6012188861725619
+      ]
+    }
+  ],
+  "strict_lowering_counterexample": {
+    "jump_matrix": [
+      [
+        0.0,
+        0.5,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "rate_norm": 0.6545084971874737,
+    "jump_cube_norm": 0.0,
+    "rate_grade_commutator": 0.25,
+    "three_jump_density_at_unit_waits": 6.530943806634619e-05,
+    "five_jump_density_at_unit_waits": 4.76898936612199e-10
+  }
+}
